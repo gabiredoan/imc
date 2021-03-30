@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>IMC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<h1 style="font-size:50px;">Calculo IMC</h1>
+
+<form action="imc.php" method="post">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Nome</label>
+          <input type="Text" class="form-control" name="nome" placeholder="Ex: Gabrielle Redoan">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Peso</label>
+          <input type="Text" class="form-control" name="peso" placeholder="Ex: 65.00" required step="0.010">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Altura</label>
+        <input type="Number" class="form-control" name="altura" placeholder="Ex: 1,65m" required step="0.010">
+      </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Calcular IMC</button>
+      <button type="reset" class="btn btn-primary">Limpar</button>
+</form>
+
+</body>
+</html>
